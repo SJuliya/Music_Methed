@@ -1,0 +1,12 @@
+{
+  "name": "musicmethed",
+  "version": "1.0.0",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234\""
+  }
+}
